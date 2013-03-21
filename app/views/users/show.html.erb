@@ -4,7 +4,7 @@
 </h1>
 
 <% @estimates.each do |estimate| %>
-	<%= link_to estimate, estimate %>
+	<%= link_to "Estimate #{estimate.id}", estimate %>
 	<br>
 <% end %>
 

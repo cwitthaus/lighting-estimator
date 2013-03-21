@@ -1,0 +1,15 @@
+<li id="replacement<%= replacement.id %>" data-id="<%= replacement.id %>">
+	<div class="quantity"><%= replacement.quantity %></div>
+
+	<div class="current_bulb_name"><%= replacement.current_bulb_name %></div>
+
+	<div class="current_bulb_wattage"><%= replacement.current_bulb_wattage %></div>
+
+	<div class="replacement_bulb_name"><%= Bulb.find(replacement.replacement_bulb_id).lookup_code %></div>
+
+	<div class="replacement_bulb_wattage"><%= Bulb.find(replacement.replacement_bulb_id).wattage %></div>
+
+	<div class="percent_reduction"><%= replacement.percent_reduction %></div>
+
+	<%= button_tag "X", :class => 'remove_replacement' %>
+</li>

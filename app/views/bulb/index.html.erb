@@ -1,0 +1,46 @@
+<%= will_paginate @bulbs %>
+<ul class="bulbs">
+	<% @bulbs.each do |bulb| %>
+		<li class="bulb">
+			<div class="lookup_code">
+				<span class="label"> Lookup Code: </span> 
+				<span class="value"><%= bulb.lookup_code %></span>
+			</div>
+			<div class="bulb_type">
+				<span class="label"> Type: </span> 
+				<span class="value"><%= bulb.bulb_type %></span>
+			</div>
+			<div class="wattage">
+				<span class="label"> Wattage: </span> 
+				<span class="value"><%= bulb.wattage %></span>
+			</div>
+			<div class="manufacturer">
+				<span class="label"> Manufacturer: </span> 
+				<span class="value"><%= bulb.manufacturer %></span>
+			</div>
+			<div class="energy_star">
+				<span class="label"> Energy Star: </span> 
+				<span class="value"><%= bulb.energy_star %></span>
+			</div>
+			<div class="cost">
+				<span class="label"> Cost: </span> 
+				<span class="value"><%= bulb.cost %></span>
+			</div>
+			<div class="lumens">
+				<span class="label"> Lumens: </span> 
+				<span class="value"><%= bulb.lumens %></span>
+			</div>
+			<div class="temperature">
+				<span class="label"> Temp: </span> 
+				<span class="value"><%= bulb.temperature %></span>
+			</div>
+			<div class="model_number">
+				<span class="label"> Model #: </span> 
+				<span class="value"><%= bulb.model_number %></span>
+			</div>
+			<div class="link">
+				<%= link_to bulb.link, bulb.link %>
+			</div>
+		</li>
+	<% end %>
+</ul>

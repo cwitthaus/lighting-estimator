@@ -1,0 +1,55 @@
+// Place all the styles related to the estimator controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#new_replacement {
+	position: absolute;
+	div { 
+		float:left;
+		margin-left: 50px;
+		label,input,select {
+			float: left;
+			clear: left;
+			width: 100%;
+		}
+		button { 
+			position: absolute;
+			bottom: 0px;
+		}
+	}
+}
+
+div#replacements {
+	position: absolute;
+	top: 150px;
+	width: 80%;
+	ul {
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 0;
+		li {
+			display: block;
+			width: 100%;
+			list-style-type: none;
+			margin-bottom: 20px;
+			div {
+				display: block;
+				float: left;
+				width: 12.5%;			
+			}
+			&#replacement_header {
+				font-size: .5em;
+			}
+			button {
+				float: right;
+				clear: right;
+			}
+		}
+	}
+}
+
+div#total_reduction {
+	position: absolute;
+	display: inline;
+	top: 60px;
+}

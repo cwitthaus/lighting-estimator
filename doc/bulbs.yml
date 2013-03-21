@@ -1,0 +1,66 @@
+bulb:
+ lookup_code: A19-12.5W 
+ type: A19 
+ wattage: 12.5 
+ manufacturer: Philips 
+ energy_star: Y 
+ cost: 8.48 
+ lumens: 800 
+ temperature: 2700 
+ model_number: 422154 
+ link: http://www.homedepot.com/Electrical-Light-Bulbs-LED-Light-Bulbs/h_d1/N-5yc1vZbm79/R-203406583/h_d2/ProductDisplay?catalogId=10053&langId=-1&storeId=10051#.UMX0jpPjkwk
+bulb:
+ lookup_code: MR16-5W
+ type: MR16
+ wattage: 5
+ manufacturer: EcoSmart
+ energy_star: Y
+ cost: 21.22
+ lumens: 300
+ temperature: 2700
+ model_number: 420380
+ link: http://www.homedepot.com/h_d1/N-5yc1v/R-203556142/h_d2/ProductDisplay?catalogId=10053&langId=-1&keyword=led+mr16&storeId=10051#.UT4ZGdF37ss
+bulb:
+ lookup_code: MR16-10W
+ type: MR16
+ wattage: 10
+ manufacturer: Philips
+ energy_star: Y
+ cost: 21.22
+ lumens: 500
+ temperature: 3000
+ model_number: 423780
+ link: http://www.homedepot.com/h_d1/N-5yc1v/R-203429515/h_d2/ProductDisplay?catalogId=10053&langId=-1&keyword=mr16+LED&storeId=10051#.UT9CK9F37ss
+bulb:
+ lookup_code: PAR16-6W
+ type: PAR16
+ wattage: 6
+ manufacturer: EcoSmart
+ energy_star: N
+ cost: 16.97
+ lumens: 450
+ temperature: 3000
+ model_number: ECS 20 WW FL 50WE 120
+ link: http://www.homedepot.com/h_d1/N-5yc1v/R-203605659/h_d2/ProductDisplay?catalogId=10053&langId=-1&keyword=par20&storeId=10051#.USZCPlrirss
+bulb:
+ lookup_code: PAR30-13W
+ type: PAR30
+ wattage: 13
+ manufacturer: Philips
+ energy_star: Y
+ cost: 32.97
+ lumens: 750
+ temperature: 3000
+ model_number: 420315
+ link: http://www.homedepot.com/h_d1/N-5yc1v/R-203406585/h_d2/ProductDisplay?catalogId=10053&langId=-1&keyword=par30+led&storeId=10051#.UT9VidF34z0
+bulb:
+ lookup_code: PAR30
+ type: PAR30
+ wattage: 13
+ manufacturer: EcoSmart
+ energy_star: N
+ cost: 27.17
+ lumens: 750
+ temperature: 3000
+ model_number: ECS 30 WW FL 75WE 120
+ link: http://www.homedepot.com/h_d1/N-5yc1v/R-203605655/h_d2/ProductDisplay?catalogId=10053&langId=-1&keyword=par30&storeId=10051#.USapClrioz0

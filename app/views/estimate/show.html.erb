@@ -1,0 +1,46 @@
+<div id="new_replacement">
+	<%= hidden_field_tag 'estimate_id', @estimate.id %>
+	<div class="quantity">
+		<%= label_tag 'quantity', 'Quantity' %>
+		<%= text_field_tag 'quantity' %>
+	</div>
+	<div class="current_bulb_name">
+		<%= label_tag 'current_bulb_name', 'Current Bulb Name' %>
+		<%= text_field_tag 'current_bulb_name' %>
+	</div>
+	<div class="current_bulb_wattage">
+		<%= label_tag 'current_bulb_wattage', 'Current Bulb Wattage' %>
+		<%= text_field_tag 'current_bulb_wattage' %>
+	</div>
+	<div class="replacement_bulb_id">
+		<%= label_tag 'replacement_bulb_id', 'Replacement Bulb' %>
+		<%= select_tag 'replacement_bulb_id',options_from_collection_for_select(@bulbs, 'id','lookup_code') %>
+	</div>
+	<div class="add_button">
+		<%= submit_tag 'Add', :id => 'add_bulb' %>
+	</div>
+</div>
+<div id="replacements">
+	<ul id="replacements">
+		<li id="replacement_header">
+			<div class="quantity">quantity</div>
+
+			<div class="current_bulb_name">current bulb name</div>
+
+			<div class="current_bulb_wattage">current bulb wattage</div>
+
+			<div class="replacement_bulb_name">replacement bulb name</div>
+
+			<div class="replacement_bulb_wattage">replacement bulb wattage</div>
+
+			<div class="percent_reduction">percent reduction</div>
+		</li>
+		<br>
+		<% @replacements.each do |replacement| %>
+		  <%= render 'replacement', :replacement => replacement %>
+		<% end %>
+	</ul>
+</div>
+<div id="total_reduction">
+	Total Reduction:<%= find_total_reduction_for_estimate(@estimate.id) %>
+</div>

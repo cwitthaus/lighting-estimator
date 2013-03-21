@@ -1,0 +1,11 @@
+<% provide(:title, @user.email) %>
+<h1>
+  <%= @user.email %>
+</h1>
+
+<% @estimates.each do |estimate| %>
+	<%= link_to estimate, estimate %>
+	<br>
+<% end %>
+
+<%= link_to "Create New Estimate", new_estimate_path %>

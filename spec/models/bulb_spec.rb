@@ -20,6 +20,29 @@
 require 'spec_helper'
 
 describe Bulb do
+	before { @bulb = FactoryGirl.build(:bulb)	}
+  subject { @bulb }
+
+  it { should respond_to(:lookup_code) }
+  it { should respond_to(:bulb_type)}
+  it { should respond_to(:wattage) }
+  it { should respond_to(:manufacturer) }
+  it { should respond_to(:energy_star) }
+  it { should respond_to(:cost) }
+  it { should respond_to(:lumens) }
+  it { should respond_to(:temperature) }
+  it { should respond_to(:model_number) }
+  it { should respond_to(:link) }
 	
+
+  describe "when lookup_code is not present" do
+  	before { @bulb.lookup_code = "" }
+  	it { should_not be_valid }
+  end
+
+  describe "when wattage is not present" do
+  	before { @bulb.wattage = "" }
+  	it { should_not be_valid }
+  end
 
 end

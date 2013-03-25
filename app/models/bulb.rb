@@ -20,5 +20,7 @@
 class Bulb < ActiveRecord::Base
   attr_accessible :cost, :energy_star, :link, :lookup_code, :lumens, :manufacturer, :model_number, :temperature, :bulb_type, :wattage
 
+  validates_presence_of :lookup_code, :wattage
+
   has_many :replacements, :through => :replacement_bulbs
 end

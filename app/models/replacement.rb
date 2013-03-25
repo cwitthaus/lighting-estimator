@@ -21,8 +21,10 @@ class Replacement < ActiveRecord::Base
   belongs_to :estimate
   has_many :bulbs, :through => :replacement_bulbs
 
-  validates :current_bulb_name, :replacement_bulb_id, 
-  					:percent_reduction, :estimate_id,
+  validates :current_bulb_name, 
+            :estimate_id,
+            :replacement_bulb_id,
+            :percent_reduction,
   	presence: true
   validates :current_bulb_wattage, 
   	:presence => true,
@@ -38,3 +40,4 @@ class Replacement < ActiveRecord::Base
   	end
 
 end
+

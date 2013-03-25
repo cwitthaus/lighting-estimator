@@ -31,6 +31,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'cucumber-rails', :require => false
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

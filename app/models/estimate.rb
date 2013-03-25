@@ -3,7 +3,7 @@
 # Table name: estimates
 #
 #  id         :integer          not null, primary key
-#  user_id    :integrer
+#  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -14,7 +14,10 @@ class Estimate < ActiveRecord::Base
   belongs_to :user
   has_many :replacements
 
+  validates :user_id, presence: true
+
   def find_total_reduction
+
 		reduction_sum = 0
 		total_bulbs = 0
 
@@ -25,7 +28,7 @@ class Estimate < ActiveRecord::Base
 		end
 
 		if (total_bulbs > 0)
-		  return reduction_sum/total_bulbs
+			return reduction_sum/total_bulbs
 		else
 			return 0
 		end

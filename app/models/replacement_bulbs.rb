@@ -14,4 +14,6 @@ class ReplacementBulbs < ActiveRecord::Base
 
   belongs_to :replacement
   belongs_to :bulb
+
+  validates :replacement_id, :bulb_id, presence: true
 end
